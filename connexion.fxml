@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <Scene xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.yade.ConnexionController">
-    <AnchorPane prefHeight="191.0" prefWidth="406.0">
+    <AnchorPane fx:id="img2" prefHeight="191.0" prefWidth="406.0">
       <children>
          <PasswordField fx:id="mdp" layoutX="202.0" layoutY="96.0" promptText="Mot de passe" style="-fx-background-color: grey; -fx-background-radius: 250;" />
          <TextField fx:id="login" layoutX="190.0" layoutY="32.0" style="-fx-background-color: grey; -fx-background-radius: 250;" text="Login" />
-         <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="62.0" layoutY="15.0">
+         <ImageView fx:id="img1" fitHeight="60.0" fitWidth="61.0" layoutX="62.0" layoutY="15.0">
             <image>
                <Image url="@../../../../../../../../../../../../AppData/Local/Temp/icons8_user_50px.png" />
             </image>
