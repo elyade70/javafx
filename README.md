@@ -1,2 +1,2 @@
 # javafx
- javafx de yade,hamza,youness,massimo
+ javafx de yade & massimo
