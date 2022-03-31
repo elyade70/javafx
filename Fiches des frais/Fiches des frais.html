@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>Employé</span> (
+    <span class='primary'>id-employé</span>,
+    <span class='normal'>nom</span>,
+    <span class='normal'>prénom</span>
+  )
+</div>
+<div>
+  <span class='relation'>remplit</span> (
+    <span class='foreign primary'>id-employé</span>,
+    <span class='foreign primary'>id-fiche</span>,
+    <span class='foreign primary'>id-autres</span>
+  )
+</div>
+<div>
+  <span class='relation'>fiche de frais</span> (
+    <span class='primary'>id-fiche</span>,
+    <span class='normal'>libellé</span>
+  )
+</div>
+<div>
+  <span class='relation'>Autres frais</span> (
+    <span class='primary'>id-autres</span>,
+    <span class='normal'>libellé</span>
+  )
+</div>
+<div>
+  <span class='relation'>comptable</span> (
+    <span class='primary'>id-comptable</span>,
+    <span class='normal'>rôle</span>
+  )
+</div>
+<div>
+  <span class='relation'>valide</span> (
+    <span class='foreign primary'>id-comptable</span>,
+    <span class='foreign primary'>id-fiche</span>,
+    <span class='foreign primary'>id-autres</span>
+  )
+</div>
+</div>
+</body>
+</html>
