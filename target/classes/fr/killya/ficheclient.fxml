@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.killya.ComptableController">
+   <children>
+      <Text layoutX="30.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visiteur" wrappingWidth="62.99542236328125" />
+      <Text layoutX="171.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule:" wrappingWidth="62.99542236328125" />
+      <TextField fx:id="matricule" editable="false" layoutX="234.0" layoutY="11.0" />
+      <Text layoutX="196.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" wrappingWidth="37.61199951171875" />
+      <TextField fx:id="nomm" editable="false" layoutX="234.0" layoutY="44.0" />
+      <Text fill="BLUE" layoutX="255.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autres frais " wrappingWidth="174.07550048828125">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ListView layoutX="29.0" layoutY="97.0" prefHeight="184.0" prefWidth="587.0" />
+      <Label layoutX="70.0" layoutY="156.0" prefHeight="17.0" prefWidth="63.0" text="Nuitées" />
+      <Label layoutX="56.0" layoutY="226.0" prefHeight="17.0" prefWidth="79.0" text="Kilométrage" />
+      <Label layoutX="70.0" layoutY="193.0" prefHeight="17.0" prefWidth="46.0" text="Repas" />
+      <Label layoutX="488.0" layoutY="128.0" prefHeight="17.0" prefWidth="92.0" text="Total" />
+      <Label layoutX="188.0" layoutY="128.0" prefHeight="17.0" prefWidth="92.0" text="Quantité" />
+      <Label layoutX="337.0" layoutY="128.0" prefHeight="17.0" prefWidth="92.0" text="Montant unitaire" />
+      <Label layoutX="47.0" layoutY="120.0" prefHeight="17.0" prefWidth="92.0" text="Frais forfaitaires" />
+      <TextField fx:id="txtnuitéeqté" layoutX="121.0" layoutY="152.0" onAction="#valeurnuitée" />
+      <TextField fx:id="txtnuitéemu" editable="false" layoutX="289.0" layoutY="152.0" />
+      <TextField fx:id="txtnuitéett" editable="false" layoutX="447.0" layoutY="152.0" />
+      <TextField fx:id="txtrepasqté" layoutX="127.0" layoutY="189.0" onAction="#valeurrepas" />
+      <TextField fx:id="txtrepasmu" editable="false" layoutX="289.0" layoutY="189.0" />
+      <TextField fx:id="txtrepastt" editable="false" layoutX="447.0" layoutY="189.0" />
+      <TextField fx:id="txtkmqté" layoutX="127.0" layoutY="222.0" onAction="#valeurkm" />
+      <TextField fx:id="txtkmmu" editable="false" layoutX="289.0" layoutY="222.0" />
+      <TextField fx:id="txtkmtt" editable="false" layoutX="447.0" layoutY="222.0" />
+      <Label layoutX="48.0" layoutY="355.0" text="Date" />
+      <Label layoutX="272.0" layoutY="355.0" text="Libellé" />
+      <Label layoutX="534.0" layoutY="355.0" text="Montant" />
+      <TextField layoutX="14.0" layoutY="377.0" />
+      <TextField layoutX="234.0" layoutY="377.0" />
+      <TextField layoutX="488.0" layoutY="377.0" />
+      <TextField layoutX="14.0" layoutY="419.0" />
+      <TextField layoutX="234.0" layoutY="419.0" />
+      <TextField layoutX="488.0" layoutY="419.0" />
+      <TextField layoutX="14.0" layoutY="466.0" />
+      <TextField layoutX="234.0" layoutY="466.0" />
+      <TextField layoutX="488.0" layoutY="466.0" />
+      <Line endX="471.12628173828125" endY="6.33331298828125" layoutX="188.0" layoutY="347.0" startX="-188.0" startY="6.33331298828125" />
+      <Line endX="6.333343505859375" endY="-1.16668701171875" layoutX="429.0" layoutY="355.0" startX="6.333343505859375" startY="150.33334350585938" />
+      <Line endX="8.999984741210938" endY="170.49996948242188" layoutX="196.0" layoutY="335.0" startX="8.999969482421875" startY="17.83331298828125" />
+      <Line endX="455.12628173828125" endY="-3.0517578125E-5" layoutX="205.0" layoutY="506.0" startX="-205.00001525878906" startY="-3.0517578125E-5" />
+      <Line endX="472.12628173828125" endY="10.0" layoutX="188.0" layoutY="402.0" startX="-188.0" startY="10.0" />
+      <Line endX="556.5" endY="-3.0517578125E-5" layoutX="101.0" layoutY="455.0" startX="-100.0" />
+      <Line endX="8.62628173828125" endY="18.83331298828125" layoutX="651.0" layoutY="335.0" startX="8.62628173828125" startY="170.49996948242188" />
+      <ComboBox fx:id="cbbox" layoutX="421.0" layoutY="52.0" prefWidth="150.0" promptText="région" />
+   </children>
+</AnchorPane>
