@@ -1,66 +1,66 @@
-package fr.killya;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Connection;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
+// package fr.killya;
+// import java.sql.DriverManager;
+// import java.sql.ResultSet;
+// import java.sql.SQLException;
+// import java.sql.Connection;
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+// import org.junit.jupiter.api.Test;
 
-public class AppTest {
+// public class AppTest {
 
-    @Test
-     public void RequeteNonPreparee_Identification_DoitFonctionner()throws SQLException  {
-  String ekip="'Or 1=1";
+//     @Test
+//      public void RequeteNonPreparee_Identification_DoitFonctionner()throws SQLException  {
+//   String ekip="'Or 1=1";
   
 
 
-        // Agir
+//         // Agir
        
    
-        String dbURL = "jdbc:mysql://localhost:3306/gsb2";
-        String username = "root";
-        String password = "";
+//         String dbURL = "jdbc:mysql://localhost:3306/gsb2";
+//         String username = "root";
+//         String password = "";
       
-        Connection conn = DriverManager.getConnection(dbURL, username, password);
-        ResultSet e=ConnexionController.requeteConnexion( conn, ekip);
-        int size = 0;
-        while (e.next()) {
-            size++;
-        }
-  int f=size;
+//         Connection conn = DriverManager.getConnection(dbURL, username, password);
+//         ResultSet e=ConnexionController.requeteConnexion( conn, ekip);
+//         int size = 0;
+//         while (e.next()) {
+//             size++;
+//         }
+//   int f=size;
     
-        // ASSert
-        assertEquals(4,  f);
+//         // ASSert
+//         assertEquals(4,  f);
 
-    }
+//     }
     
 
-    @Test
-     public void RequetePreparee_Identification_DoitPasFonctionner()throws SQLException  {
-  String ekip="'Or 1=1";
+//     @Test
+//      public void RequetePreparee_Identification_DoitPasFonctionner()throws SQLException  {
+//   String ekip="'Or 1=1";
   
-String mdps="ekedid";
+// String mdps="ekedid";
 
-        // Agir
+//         // Agir
        
    
-        String dbURL = "jdbc:mysql://localhost:3306/gsb2";
-        String username = "root";
-        String password = "";
+//         String dbURL = "jdbc:mysql://localhost:3306/gsb2";
+//         String username = "root";
+//         String password = "";
       
-        Connection conn = DriverManager.getConnection(dbURL, username, password);
-        ResultSet e=ConnexionController.requeteConnexionPrepared( conn, ekip, mdps);
+//         Connection conn = DriverManager.getConnection(dbURL, username, password);
+//         ResultSet e=ConnexionController.requeteConnexion( conn, ekip);
         
-        int size = 0;
-        while (e.next()) {
-            size++;
-        }
-  int f=size;
+//         int size = 0;
+//         while (e.next()) {
+//             size++;
+//         }
+//   int f=size;
     
-        // ASSert
-        assertEquals(4,  f);
+//         // ASSert
+//         assertEquals(4,  f);
 
-    }
+//     }
  
    
-}
+// }

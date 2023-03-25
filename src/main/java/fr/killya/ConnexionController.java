@@ -20,7 +20,7 @@ public class ConnexionController {
     private TextField login;
 
     @FXML
-    private static PasswordField mdp;
+    private  PasswordField mdp;
 
     @FXML
     private Button identification;
@@ -73,16 +73,16 @@ public class ConnexionController {
 
     }
 
-    // private ResultSet requeteConnexion(Connection conn, String ekip) throws SQLException {
-    //     Statement statement = conn.createStatement();
-    //     String co = "SELECT * from comptable WHERE ag_login ='" + ekip + "' AND ag_password ='"
-    //             + mdp.getText() + "'";
-    //     ResultSet cor = statement.executeQuery(co);
-    //     return cor;
-    // }
+    ResultSet requeteConnexion(Connection conn, String ekip) throws SQLException {
+        Statement statement = conn.createStatement();
+        String co = "SELECT * from comptable WHERE ag_login ='" + ekip + "' AND ag_password ='"
+                + mdp.getText() + "'";
+        ResultSet cor = statement.executeQuery(co);
+        return cor;
+    }
 
     
-    public static ResultSet requeteConnexion(Connection conn, String ekip) throws SQLException {
+/*public static ResultSet requeteConnexion(Connection conn, String ekip) throws SQLException {
         Statement statement = conn.createStatement();
         String co = "SELECT * from comptable WHERE ag_login ='" + ekip ;
         ResultSet cor = statement.executeQuery(co);
@@ -100,5 +100,6 @@ public class ConnexionController {
             preparedStatement.executeUpdate();
             return cor;
 
-    }
+    }*/
+
 }
